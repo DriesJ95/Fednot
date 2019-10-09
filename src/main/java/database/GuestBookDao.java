@@ -43,8 +43,6 @@ public class GuestBookDao{
 
     @Override
     public String toString() {
-        return "GuestBookDao{" +
-                "c=" + c +
-                '}';
+        return "";
     }
 }

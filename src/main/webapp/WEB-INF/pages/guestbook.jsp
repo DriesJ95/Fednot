@@ -22,12 +22,11 @@
     </tr>
     <c:forEach items="${guestBookList}" var ="guest">
         <tr>
-            <td>${guest.date}</td>
-            <td>${guest.name}</td>
-            <td>${guest.message}</td>
+            <td>${guest.getDate()}</td>
+            <td>${guest.getName()}</td>
+            <td>${guest.getMessage()}</td>
         </tr>
     </c:forEach>
-    ${guestBookList}
 </table>
 </div>
 </body>
