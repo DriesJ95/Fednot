@@ -16,6 +16,10 @@ public class GuestBookBean {
         this.message = message;
     }
 
+    public Date getDate() {
+        return date;
+    }
+
     public String getName() {
         return name;
     }
