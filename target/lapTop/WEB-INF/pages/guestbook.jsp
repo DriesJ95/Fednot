@@ -7,14 +7,14 @@
 <body style="height: 100vh; width: 100vw; display: grid; grid-template: auto auto / auto ; grid-gap: 4em; font-family: 'Segoe UI'">
 <h1 style="grid-row: 1; color:#5193af" align="center" >Guestbook</h1>
 <br/>
-<div style="display:grid; grid-template: auto / auto auto; margin-left: 10vw; margin-right:10vw">
+<div style="display:grid; grid-template: auto / auto auto auto; margin-left: 10vw; margin-right:10vw">
 <form style ="grid-row: 2; grid-column:1";align = "center" method="post" action="servlet">
-    <p>Enter your name here: <input type = "text" name="Name"></p>
-    <p>Enter your message here: <input type = "text" name = "Message"></p>
+    <p>Enter your name here: <input type = "text" name="Name" required></p>
+    <p>Enter your message here: <input type = "text" name = "Message" required></p>
     <p><input type="submit" name="Add to DB"></p>
 </form>
 <br/>
-<table style="grid-row: 2; grid-column: 2; background-color: #5193af; color: white; border-color: white; border-radius: 5px;" align="center" border="1" cellpadding=10">
+<table style="grid-row: 2; grid-column: 2 / 3 span; background-color: #5193af; color: white; border-color: white; border-radius: 5px;" align="center" border="1" cellpadding=10">
     <tr>
         <th>Date</th>
         <th>Name</th>
